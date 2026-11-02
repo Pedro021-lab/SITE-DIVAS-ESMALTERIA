@@ -9,8 +9,19 @@ body {
     background-color: #FBF6F3;
     zoom: 80%;
 }
- 
 
+header {
+    min-width: 200vw;
+    min-height: 30vh;
+    z-index: +1;
+    position: fixed;
+    top: 0;
+    background-color: #FBF6F3;
+}
+
+main {
+    margin-top: 170px;
+}
 
 #logo-divas {
     width: 250px;
@@ -26,9 +37,9 @@ body {
     position: relative;
     top: -30px;
     left: 300px;
-   
-   
-      
+
+
+
 }
 
 .botao-menu {
@@ -68,6 +79,11 @@ body {
     line-height: 1;
     transition: transform 0.5s ease;
     box-shadow: #222222;
+}
+
+.botao-agendar-menu:hover {
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
 
@@ -147,12 +163,19 @@ span {
     left: -340px;
     top: -70px;
     cursor: pointer;
-    padding: 20px 38px 20px 38px;
+    padding: 20px 38px;
     margin-left: 100px;
     margin-top: 30px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1;
+}
+
+.link-servicos:hover {
+    transform: translateY(-7%);
+    border-bottom: 3px solid #C36072;
+    color: #C36072;
+    transition: 0.5s;
 }
 
 .main-direita {
@@ -395,7 +418,7 @@ section {
     margin-bottom: 60px;
 }
 
-.botao-fibra{
+.botao-fibra {
     font-family: "montserrat", sans-serif;
     background-color: #FBF6F3;
     border: 1px solid #C36072;
@@ -428,7 +451,7 @@ section {
 footer {
     margin-top: 80px;
     background-color: #222222;
-   
+
 }
 
 .footer-esquerda {
@@ -502,43 +525,48 @@ h4 {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.4;
-     color: #C36072;
+    color: #C36072;
 }
-.conteudo-footer-1{
+
+.conteudo-footer-1 {
     font-family: "montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
-     color: white;
+    color: white;
 }
+
 .titulo-footer-2 {
     font-family: "montserrat", sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.4;
     margin-top: 20px;
-     color: #C36072;
-    
+    color: #C36072;
+
 }
-.conteudo-footer-2{
+
+.conteudo-footer-2 {
     font-family: "montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
     margin-bottom: 20px;
-     color: white;
+    color: white;
 }
+
 .titulo-footer-3 {
     font-family: "montserrat", sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.4;
-     color: #C36072;
+    color: #C36072;
 }
-.conteudo-footer-3{
+
+.conteudo-footer-3 {
     font-family: "montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
-     color: white;
+    color: white;
 }

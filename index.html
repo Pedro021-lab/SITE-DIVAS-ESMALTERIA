@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Divas esmalteria</title>
@@ -19,103 +15,118 @@
 <body>
 
     <header>
-
-        <img id="logo-divas" src="./img/logo-divas-atualizado.png" alt="logo-divas">
+        <img id="logo-divas" src="./img/logo-divas-atualizado.png" alt="Logo Divas Esmalteria">
 
         <nav class="menu">
-            <button class="botao-menu">INÍCIO</button>
-            <button class="botao-menu">SERVIÇOS</button>
-            <button class="botao-menu">SOBRE</button>
-            <button class="botao-menu">GALERIA</button>
-            <button class="botao-agendar-menu">AGENDAR</button>
+            <a class="botao-menu" href="#inicio">INÍCIO</a>
+            <a class="botao-menu" href="#servicos">SERVIÇOS</a>
+            <a class="botao-menu" href="#sobre">SOBRE</a>
+            <a class="botao-menu" href="#galeria">GALERIA</a>
+            <!-- troque 55DDDNUMERO pelo seu número, ex: 5581999999999 -->
+            <a class="botao-agendar-menu" href="https://wa.me/55DDDNUMERO">AGENDAR</a>
         </nav>
-
-
-
     </header>
 
-    <main>
-        <div class="main-esquerda">
-            <p class="text-decorativo"> ESMALTARIA PREMIUM</p>
-            <h1>Suas unhas, sua <span>essência.</span></h1>
-            <p class="text-principal">Unhas lindas, bem cuidadas e do seu jeito. Aqui, cada detalhe é feito para realçar
-                a sua beleza.</p>
-            <button class="botao-agendar-main">AGENDAR HORÁRIO</button>
-            <a class="link-servicos"> NOSSOS SERVIÇOS → </a>
+    <main id="inicio">
+
+        <!-- Bloco principal: texto à esquerda, imagem à direita -->
+        <div class="hero">
+            <div class="main-esquerda">
+                <p class="text-decorativo">ESMALTARIA PREMIUM</p>
+                <h1>Suas unhas, sua <span>essência.</span></h1>
+                <p class="text-principal">Unhas lindas, bem cuidadas e do seu jeito. Aqui, cada detalhe é feito para
+                    realçar a sua beleza.</p>
+
+                <div class="hero-acoes">
+                    <a class="botao-agendar-main" href="https://wa.me/55DDDNUMERO">AGENDAR HORÁRIO</a>
+                    <a class="link-servicos" href="#servicos">NOSSOS SERVIÇOS →</a>
+                </div>
+            </div>
+
+            <div class="main-direita">
+                <img class="imagem-principal" src="./img/imagem-mao.png" alt="Mão com unhas esmaltadas">
+            </div>
         </div>
 
-        <div class="main-direita">
-            <img class="imagem-principal" src="./img/imagem-mao.png" alt="imagem-mao">
-        </div>
-
-        <div class="beneficio-1">
-            <h2 class="beneficio-premium">PRODUTOS <span>PREMIUM </span></h2>
-            <p class="text-premium">Trabalhamos com as melhores marcas do mercado.</p>
-        </div>
-        <div class="beneficio-2">
-            <h2 class="beneficio-ambiente">AMBIENTE <span>ACOLHEDOR</span></h2>
-            <p class="text-ambiente">Um espaço pensado para você relaxar e se sentir bem.</p>
-        </div>
-        <div class="beneficio-3">
-            <h2 class="beneficio-atendimento">ATENDIMENTO <span>ESPECIAL</span> </h2>
-            <P class="text-atendimento">Cada cliente é única e merece toda a nossa atenção.</P>
-        </div>
-        <div class="beneficio-4">
-            <h2 class="beneficio-agendamento"> AGENDAMENTO <span>FÁCIL</span></h2>
-            <p class="text-agendamento">Agende online de forma rápida e prática pelo WhatsApp</p>
+        <!-- Os 4 benefícios agrupados em um único container -->
+        <div class="beneficios">
+            <div class="beneficio">
+                <h2 class="beneficio-titulo">PRODUTOS <span>PREMIUM</span></h2>
+                <p class="beneficio-texto">Trabalhamos com as melhores marcas do mercado.</p>
+            </div>
+            <div class="beneficio">
+                <h2 class="beneficio-titulo">AMBIENTE <span>ACOLHEDOR</span></h2>
+                <p class="beneficio-texto">Um espaço pensado para você relaxar e se sentir bem.</p>
+            </div>
+            <div class="beneficio">
+                <h2 class="beneficio-titulo">ATENDIMENTO <span>ESPECIAL</span></h2>
+                <p class="beneficio-texto">Cada cliente é única e merece toda a nossa atenção.</p>
+            </div>
+            <div class="beneficio">
+                <h2 class="beneficio-titulo">AGENDAMENTO <span>FÁCIL</span></h2>
+                <p class="beneficio-texto">Agende online de forma rápida e prática pelo WhatsApp</p>
+            </div>
         </div>
 
     </main>
 
-    <section>
+    <section class="secao-servicos" id="servicos">
 
-        <h3 class="servicos">SERVIÇOS</h3>
-        <div id="titulo-section">
-            <h3 class="titulo-section">Do básico ao perfeito</h3>
-            <p class="text-section"> Tudo pra deixar suas unhas ainda mais lindas</p>
+        <div class="titulo-bloco">
+            <p class="servicos">SERVIÇOS</p>
+            <h2 class="titulo-section">Do básico ao perfeito</h2>
+            <p class="text-section">Tudo pra deixar suas unhas ainda mais lindas</p>
         </div>
-        <button class="botao-esmaltacao">ESMALTAÇÃO</button>
-        <button class="botao-alongamento">ALONGAMENTO</button>
-        <button class="botao-manutencao">MANUTENÇÃO</button>
-        <button class="botao-banho">BANHO DE GEL</button>
-        <button class="botao-fibra">FIBRA DE VIDRO</button>
-        <img class="imagem-mao-1" src="./img/imagem-mao-1.png" alt="imagem-mao">
-        <img class="imagem-mao" id="imagem-mao2" src="./img/imagem-mao-2.png" alt="imagem-mao">
-        <img class="imagem-mao" id="imagem-mao3" src="./img/imagem-mao-3.png" alt="imagem-mao">
-        <img class="imagem-mao" id="imagem-mao4" src="./img/imagem-mao-4.png" alt="imagem-mao">
-        <img class="imagem-mao" id="imagem-mao5" src="./img/imagem-mao-5.png" alt="imagem-mao">
+
+        <div class="botoes-servicos">
+            <button class="botao-servico">ESMALTAÇÃO</button>
+            <button class="botao-servico">ALONGAMENTO</button>
+            <button class="botao-servico">MANUTENÇÃO</button>
+            <button class="botao-servico">BANHO DE GEL</button>
+            <button class="botao-servico">FIBRA DE VIDRO</button>
+        </div>
+
+        <div class="galeria-servicos" id="galeria">
+            <img src="./img/imagem-mao-1.png" alt="Unhas em tom branco leitoso">
+            <img src="./img/imagem-mao-2.png" alt="Unhas em tom nude degradê">
+            <img src="./img/imagem-mao-3.png" alt="Unhas em tom rosado">
+            <img src="./img/imagem-mao-4.png" alt="Unhas em tom nude com anel">
+            <img src="./img/imagem-mao-5.png" alt="Unhas vermelhas">
+        </div>
 
     </section>
 
-    <footer>
+    <footer id="sobre">
 
         <div class="footer-esquerda">
             <p class="text-footer-1">PRONTA PARA SE SENTIR INCRÍVEL?</p>
-            <h4> Agende seu horário e venha se cuidar!</h4>
-            <p class="text-footer-2"> Seu momento é agora. Estamos te esperando!</p>
-            <button class="botao-agendar-footer">AGENDAR PELO WHATSAPP</button>
+            <h4>Agende seu horário e venha se cuidar!</h4>
+            <p class="text-footer-2">Seu momento é agora. Estamos te esperando!</p>
+            <a class="botao-agendar-footer" href="https://wa.me/55DDDNUMERO">AGENDAR PELO WHATSAPP</a>
         </div>
-        <img class="imagem-esmalte" src="./img/imagem-esmalte.png" alt="imagem-esmalte">
+
+        <img class="imagem-esmalte" src="./img/imagem-esmalte.png" alt="Esmalte">
+
         <div class="footer-direita">
             <div>
-                <P class="titulo-footer-1">ONDE ESTAMOS</P>
-                <p class="conteudo-footer-1">Praça Pedro Joaquim de Souza , Centro , Gravatá - PE </p>
+                <p class="titulo-footer">ONDE ESTAMOS</p>
+                <p class="conteudo-footer">Praça Pedro Joaquim de Souza, Centro, Gravatá - PE</p>
             </div>
             <div>
-                <p class="titulo-footer-2">HORÁRIOS</p>
-                <p class="conteudo-footer-2">Ter a Sab: das 8h às 18h</p>
+                <p class="titulo-footer">HORÁRIOS</p>
+                <p class="conteudo-footer">Ter a Sab: das 8h às 18h</p>
             </div>
             <div>
-                <p class="titulo-footer-3">NOS SIGA</p>
-                <p class="conteudo-footer-3">@oficialdivasesmalteria</p>
+                <p class="titulo-footer">NOS SIGA</p>
+                <p class="conteudo-footer">@oficialdivasesmalteria</p>
             </div>
         </div>
 
     </footer>
 
     <div class="container-whatsapp">
-        <a>
-            <img src="./img/whatsapp.png" alt="logo-whatsapp">
+        <a href="https://wa.me/55DDDNUMERO" aria-label="Falar no WhatsApp">
+            <img src="./img/whatsapp.png" alt="Logo WhatsApp">
         </a>
     </div>
 
